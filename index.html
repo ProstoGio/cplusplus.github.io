@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Learning C++</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="titleOFpg">Learning C++ Language Programming</div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#simpleCodding">Simple Codding</a></li>
+            <li><a href="#ifOperator">"If" operator</a></li>
+            <li><a href="#whileLoop">"While" loop</a></li>
+            <li><a href="#forLoop">"For" loop</a></li>
+            <li><a href="#arrays">Arrays</a></li>
+            <li><a href="#string">String</a></li>
+            <li><a href="#char">Char</a></li>
+            <li><a href="#vector">Vector</a></li>
+        </ul>
+    </nav>
+
+
+
+<main>
+    <section id="simpleCodding">
+        <div class="titleOFtopic" >Simple Codding</div>
+        <div class="topic">Now, we will learn C++ Programming</div>
+        <pre class="code">
+        #include < iostream >
+        using namespace std;
+        int main (){
+
+            (code);
+
+            return 0;
+        
+        }</pre>
+
+        <div class="topic">This is a framework for writing code 👆</div>
+        <div class="topic">you need to write code here, between "int main () and return 0. I will explain what "return 0" means later. Now get started! </div>
+        <div class="topic">Learning first step of programming C++</div>
+        <div class="topic">for example:</div>
+
+        <pre class="code">
+        #include < iostream >
+        using namespace std;
+        int main() { 
+            
+            int sum, a, b; 
+            cin >> a >> b; 
+            sum = a + b; 
+            cout << sum; 
+
+            return 0; 
+        
+        }</pre>
+
+        <div class="topic">this program will sum up your inputed numbers.</div>
+
+        <div class="topic">"cin" is input 
+        you can input any quanity of numbers, example: if you want to input 1 number, you will do this_cin>>a; ("a" is a something number that you will input). if you want to input 2 numbers, youi will must to do this_cin>>a>>b;, if 3, this_cin>>a>>b>>c;and so on.</div>
+
+        <div class="topic">I told, that "a" is a something number, it is a integer. to input or do Mathematical operations on it, first you need to announce it with function "int". Example: int a; after this you can input and do mathematical operations on it. I will explain what "int" function does.</div>
+                
+        <div class="topic">Through an int, a box is created in the computer's memory, with the name whatever you call it. For example: int a; He created a drawer called "a". But you can name not only the letter, but also the name. For example, if we want a cell in which the sum of two numbers will be stored, we can create it and name it like this: int sum;
+        If, for example, the number of five-digit numbers, then so: int fivedigit_quantity; and so on. we can name it what we want.</div>
+
+        <div class="topic">Now, we must learn how to do mathematical operations on numbers what we input, but first we must to learn something until that. There is something in C++ that is much needed. This is an assignment. We can see this in that program upper: "sum = a + b;". this is assignment. We told our program to assignment "a+b" to sum. that means that if a=1 and b=2, sum will equal to 3.  You can also subtract, multiply, divide, and take the remainder. subtract_"-". multiply_"*". divide_"/". take the remainder_"%".</div>
+    
+        <div class="topic">Now, I will told you the important thing in c++ coding language. I don't know, but I think you've already noticed that I put a semicolon at the end of every function, assignment, and so on. This is an ending of each function. if you dont put semicolon, code will be wrong And it will give you an error, so remember this.</div>
+                
+        <div class="topic">Now we will learn how to output our answer. in my program, you can see this: "cout << sum;". this is a output.  when we input a "a" and "b", (in our example 1 and 2), we told our program to assignment "a+b" to the sum. then, we output the sum.(sum of "a" and "b", 1 and 2) it will output 3, because 1+2 equals to 3.</div>
+
+        <div class="topic">Now we know, that this program outputs sum of to integers, "a" and "b". if you input 2 and 4, it will output 6, if 5 and 10, it will output 15 and so on. this was a simple c++ program, we used int, console input (cin), assigment, mathematical operations ("+" but we learned "-", "*", "/", "%" too), and console output (cout).</div>
+    </section><br><br><br><br>
+<!-- ---------------------------------------------------------------------- -->
+    <section id="ifOperator">
+        <div class="titleOFtopic">"if" operator</div>
+    
+        <div class="topic">Now we will learn a new operator called “if”.You will need this operator in almost every C++ task.</div>
+
+        <div class="topic">Example:</div>
+        <pre class="code">
+        #include < iostream >
+        using namespace std;
+        int main (){
+            
+            int a;
+            cin>>a;
+            if(a>10){
+                cout<<”Yes”;
+            }else{
+                cout<<”No”;
+            }
+            return 0;
+        
+        }
+        </pre>
+
+        <div class="topic">In this code we have used "if" operator. If you understand what this program does? If you don't understand, don't be afraid, I didn't explain it to you and how you will understand hee-hee.
+        Let's get started:
+        As I said, we'll need the "if" operator in almost every C++ task because it's a very important thing. Through it, one can compare one number with another, find out whether the number is odd or even, and so on. This is a very important operator. Let's learn to write it:</div>
+
+        <pre class="code">
+        if("logical representation"){
+            "any actions"; 
+        }else{  
+            "any actions";  
+        }
+        </pre>
+
+        <div class="topic">You don't need to use "else" in the "if" operator if you don't need to. If you don't need it, you can do it like this:
+        </div>
+
+        <pre class="code">
+        if("logical representation"){
+            "any action";  
+        } 
+        </pre>
+        <div class="topic">Now consider our given example (above).
+        We declare some integer "a", that is, we create a box.
+        Then this will come to us. In the "if" operator we check if it is greater than 10 or not. If yes, we get_"Yes", if not, and it is less, then_"No". That is, this program checks if there is a number greater than 10, and if it is, it outputs yes, and if it is not more, i.e. less, it outputs no. (Remember, whenever we come up with a word or a sentence, we must put it in quotation marks_" ").</div>
+
+        <div class="topic">Now let's do a task for which the following condition will be true: we enter a natural number, check if it is odd or not and output "even" if it is even, and "odd" if it is odd. Let's get started:</div>
+
+        <pre class="code">
+        #include < iostream >
+        using namespace std;
+        int main (){ 
+            
+            int num; 
+            cin >> num;
+            if(num % 2 == 0){
+                cout << ”even”;
+            }
+            else{
+                cout << ”odd”; 
+            }
+
+            return 0;
+        
+        }  
+        </pre>
+
+        <div class="topic">Here is our program. There is one thing in this code: if(num%2==0) . You won't understand this yet, because I haven't told you something yet. Here, for example, what is this "=="? This is equality. It denotes equality. (Remember, never compare one number to another like this: if(a=b) . This is a big mistake. “=” and “==” are two different things. “=” is assignment, and “==” is equality). There are also other logical signs: “>”_greater than, “<”_less than, “>=”_greater than or equal to, “<=”_less than or equal to, and as we already know “==”_equal to. That is, we divide num by 2 and get its remainder, that is, if num is 2, the remainder is 0, if num is 3, then 1, do you understand, and so on. If this balance is equal to 0, it turns out to be even, and if it is not equal to 0, it turns out to be odd. If it is odd, it will output "odd", if it is even, it will output "even". You will understand what is the matter if you are good at mathematics.</div>
+    </section><br><br><br><br>
+<!-- ---------------------------------------------------------------------- -->
+    <section id="whileLoop">
+        <div class="titleOFtopic">"while" loop</div>
+        <div class="topic">Now let's move on to a new topic called "while". This is a loop. Through it we can do one or more actions as many times as we want and need. Now, let's make an example, and let's discuss this topic through it.</div>
+
+        <pre class="code">   
+        include < iostream >
+        using namespace std;
+        int main (){   
+            
+            int num, i=0; 
+            cin>>num; 
+            while(i < 10){ 
+                num = num + 1; 
+                i=i+1; 
+            } 
+            cout < < num; 
+            return 0;
+        
+        }</pre>
+
+        <div class="topic">The "while" loop is written like this:</div>
+        <pre class="code">
+        while("logical representation"){
+            "action 1"
+            "action 2"
+            "action 3"
+        }</pre>
+
+        <div class="topic">and so on. (actions). We tell the computer that as long as i (i is zero) is less than 10, to add one to number. Then along with that, so that the cycle does not end and repeat this action endlessly, we also add i to one. That is, if we enter 0, it will give us 10 as an answer, if we enter 5, it will give us 15 as an answer.</div>
+
+        <div class="topic">Now let's write another program subject to the following condition: We enter a single natural number. We calculate how many divisors it has. Let me show you this program and then discuss.</div><br>
+
+        <pre class="code">    
+        #include < iostream >
+        using namespace std;
+        int main (){
+
+            int number, i=1, divisors=0;
+            cin>>number;
+            while( i <= number){
+            if (number%i==0){
+                divisors=divisors+1;
+            }
+                i=i+1;
+            }
+            cout << divisors;
+        
+            return 0;
+        }</pre>
+
+        <div class="topic">What if you find out what's going on? Don't worry, I'll explain. That is, first, as usual, to enter the number. Then we assign 1 to the counter named i. You will understand why later. We also declare an integer called "divisors". Here we will store the number of dividers. We know how to enter, we entered the number. Then the cycle begins. as long as i is less than number. Then we have this if operator: if(number%i==0)divisors=divisors+1; If you're good at math, you'll immediately understand what's going on. That is, if the number is divisible by i without a remainder, that is, it is a divisor of the number, and therefore we should add one to "divisors".</div>
+    </section><br><br><br><br>
+<!-- ---------------------------------------------------------------------- -->
+    <section id="forLoop">
+        <div class="titleOFtopic">“for” loop</div>
+        <div class="topic">We already know the "while" loop. The "for" loop is very similar to it, but sometimes more convenient. Let's see how it works.</div>
+        <div class="topic">Two completely identical codes are presented. One is written with the familiar "while" loop, and the other with the "for" loop, which we should get to know today.</div>
+        <pre class="code">
+        //first:
+            #include < iostream > 
+            using namespace std; 
+            int main (){ 
+                
+                int num, i=0; 
+                cin>>num; 
+                while(i < 10){ 
+                    num = num + 1; 
+                    i = i + 1; 
+                } 
+                cout < < num; 
+
+                return 0;
+            
+            }</pre>
+
+        <pre class="code">
+        //second:
+            #include < iostream > 
+            using namespace std; 
+            int main(){ 
+                
+                int num; 
+                cin>>num; 
+                for(int i=0; i < 10; i++){ 
+                    num = num + 1; 
+                } 
+                cout < < num;  
+
+                return 0;
+            
+            }</pre>
+
+        <div class="topic">In the first code we see an example executed with a while loop. in the second with "for". There is no difference in these programs if you know. As I told you before, "for" is more convenient in some cases. This is one of the cases. I will explain how it is. Let's look at the "while" entry first:</div>
+        <pre class="code">
+        int counter;
+        while(boolean instance){
+            "actions";
+            "increase the counter by one";
+        }</pre>
+
+        <div class="topic">Now let's look at the "for" entry:</div>
+<pre class="code">
+for(int "Counter"; "Boolean Expression"; "Increase Counter"){
+    "actions";
+}</pre>
+
+        <div class="topic">If you look, in "for" 3 are combined into one. (int counter; , a logical representation, and increment the counter by one or as many as you want.) (When we write "i++" in the second code above, it is the same as "i=i+1".)</div>
+        <div class="topic">The "for" loop is a loop like the "while" loop, it doesn't do anything different, and it won't change anything, it's just a shortened version of the "while" loop. If you understand what the first code of "while" does (written above), our second code also does the same (also written above, with "for"). The difference is only in recording and the time to record it in the economy, although in some places "while" is more convenient, depending on what the task is.</div>
+        <div class="topic">We don't need to distinguish those examples anymore, because if you understand the program written with "while" loop, you will understand the program written with "for" as well. It's just written differently.</div>
+    </section><br><br><br><br>
+<!-- ---------------------------------------------------------------------- -->
+    <section id="arrays">
+        <div class="titleOFtopic">Arrays</div>
+    
+        <div class="topic">Today we will study a not so difficult topic, but difficult compared to previous topics, a topic called "arrays".
+        An array is not a specific function or operator. You may have heard and studied this topic in mathematics. It's almost no different in programming (maybe, I don't know exactly, but you won't need math because I'll explain it to you) just the principles of writing and using it here. Let's get started.</div>
+        
+        <div class="topic">
+        An array is a group of numbers or other things. For example, people saw a forest. They named it "wood". There are 5 trees in total in this forest, and each one has its own number, index. (Note!!! The number of the first element in the array is 0)</div>
+
+        <pre class="topic">
+        First tree index: "0";
+        Second tree index: "1";
+        Third tree index: "2";
+        Fourth tree index: "3";
+        Fifth tree index: "4".</pre>
+        
+        <div class="topic">Now we will teach you how to display these elements. If we want to select, for example, the third tree, we write like this: “ int a=wood[2]; ". After that, what is in the second element of the wood array will be stored in some variable "a". and so on. We can write whatever we want in the array. For example: let's create an array called "a" with 5 elements.</div>
+
+        <pre class="code">int a[5];</pre>
+
+        <div class="topic">In this case the array is empty.</div>
+
+        <pre class="code">for ( int i = 0; i < 5; i++ ) a[ i ] = 0;</pre>
+
+        <div class="topic">After that, the array will look like this: [0, 0, 0, 0, 0]
+        That is, we wrote zeros in it. Let's assign 10 to the fifth element.</div>
+
+        <pre class="code">a[4]=10;</pre>
+
+        <div class="topic">After that the array will look like this: [0, 0, 0, 0, 10]
+        Now assign 7 to the second one.</div>
+
+        <pre class="code">a[1]=7;</pre>
+
+        <div class="topic">After that it will become like this: [0, 7, 0, 0, 10]
+        In short, you understand. (Don't miss anything, otherwise you won't understand anything).
+        </div>
+
+        <div class="topic">It will also teach you how to insert array elements. This happens in a cycle. With any loop, or while or for, but we will use for because it is more convenient.</div><br>
+
+        <pre class="code">
+        int a[10];
+        for(int i=0; i < 10; i++){
+            cin>>a[i];
+        }	
+        </pre>
+
+        <div class="topic">If we enter, let's say: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        </div>
+
+        <pre class="topic">
+        then a[0] will be: "1";
+        then a[1] will be: "2";
+        then a[2] will be: "3";
+        then a[3] will be: "4";
+        then a[4] will be: "5";
+        then a[5] will be: "6";
+        then a[6] will be: "7";
+        then a[7] will be: "8";
+        then a[8] will be: "9";
+        Then a[9] will be: "10".</pre>
+    
+        <div class="topic">We can also output in the same way. That is, I mean with loop is like this:</div>
+
+        <pre class="code">
+        for (int i = 0; i < 10; i + +) {
+            cout << a[i];
+        }</pre>
+        <div class="topic">
+        Now that we have enough knowledge about arrays, let's do one task as usual. The condition is as follows: we introduce an array with n number of elements and increase each member by one. Let's do this:</div>
+
+        <pre class="code">
+        int n;
+        cin >> n;
+        int a [n];
+        for (int i = 0; i < n; i++) {
+            cin >> a [i];
+            a [i] = a [i] + 1;
+        }
+        for (int i = 0; i < n; i++) {
+            cout << a [i];
+        }</pre>
+        <div class="topic">
+        this is a code. it fully works. if you see, we assign +1 to each array element. if you input 5 and [1, 2, 3, 4, 5] it will output [2, 3, 4, 5, 6]. thats all.</div>
+    </section><br><br><br><br>
+<!-- ---------------------------------------------------------------------- -->
+    <section id="String">
+        <div class="titleOFtopic">String</div>
+        
+        <div class="topic">String is a collection of characters. There are two types of strings commonly used in C++ programming language:</div>
+    
+        <ul>
+            <li class="topic">Strings that are objects of string class (The Standard C++ Library string class)</li>
+            <li class="topic">char (characters. Programmers also use that to program in C language)</li>
+        </ul>
+    
+        <div class="topic">first we will learn C++ strings. then we will learn char to next lesson. I will explain everything myself. And we will start our topic with C++ String. Then Char into next lesson.</div>
+
+        <div class="topic">C++ strings</div>
+
+        <div class="topic">String is an array of characters. For example string "C++" has 3 characters. They are: "C", "+", and "+". string "Hello World" has a 11 characters. You will ask, why 11? there are only 10 letters yeah? but no. if you see, word "Hello" and word "World" has a space between them. there are only one space. space is this: " ". But don't confuse " " and "". in " " there is space. but in the "" there is anything. it is empty. If there was a string "Hello  World", there would be 12 characters. 10 symbols and 2 space. I think you understood.</div>
+
+        <div class="topic">How to define a C++ string?</div>
+
+        <pre class="code">string str = "C++";</pre>
+    
+        <div class="topic">Or:</div>
+    
+        <pre class="code">
+        string str;
+        str = "C++";
+        </pre>
+
+        <div class="topic">We first defined a string named str. then assigned "C++" with 2 ways. Now in str string there is a word "C++". And don't forget to write word which you want to assign to sting between 👉 "" 👈. </div>
+
+        <div class="topic">Now we will talk about, how logical operators work on string.
+        on string we can use only one logical operator, "+". Other logical operators aren't working on string. Let me explain, how "+" works on string. I will use example:</div>
+
+        <pre class="code">
+        string s1, s2, s3;
+        s1= "Hello";
+        s2= "World";
+        s3= s1 + s2;
+        cout << s3;
+        </pre>
+
+        <div class="topic">"+" Operator connects any quanity of strings. if you understand, what will be output? output will be: "HelloWorld". programm connected s1 and s2 and got string "HelloWorld". If you want to insert space between s1 and s2, then add one space to end to s1, or one space in start of s2.</div>
+
+        <div class="topic">Adding 1 space at the end of s1:</div>
+
+        <pre class="code">
+        string s1, s2, s3;
+        s1= "Hello ";
+        s2= "World";
+        s3= s1 + s2;
+        cout << s3;
+        </pre>
+
+        <div class="topic">Adding 1 space at the start of s2:</div>
+
+        <pre class="code">
+        string s1, s2, s3;
+        s1= "Hello";
+        s2= " World";
+        s3= s1 + s2;
+        cout << s3;
+        </pre>
+
+        <div class="topic">Output in both situations will be:  "Hello World".</div>
+
+        <div class="topic">String has it's own functions.</div>
+    
+        <table border="">
+            <tr>
+                <td>
+                    <div class="inTableTopic">size()</div>
+                </td>
+                <td>
+                    <div class="inTableTopic">Finds the number of characters in a string</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="inTableTopic">reverse()</div>
+                </td>
+                <td>
+                    <div class="inTableTopic">reverses whole string</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="inTableTopic"></div>
+                </td>
+                <td>
+                    <div class="inTableTopic"></div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="topic">One of the functions is "size()". it Finds the number of characters in a string. Writing size() function: name of function, then "." and then "size()".if string's name is "str", then: "str.size()". And don't forget, to assign it to int. quanity of symbols are int numbers. Example:</div>
+
+        <pre class="code">
+        string s;
+        cin >> s;
+        int quanityOFsymbols;
+        quanityOFsymbols = s.size();
+        cout << quanityOFsymbols;</pre>
+
+        <div class="topic">if you input "Hello world" quanityOFsymbols will equal to 11 becouse there are 10 symbols and one space between words. if we input "C++", quanityOFsymbols will equal to 3 becouse there are 3 symbols and so on.</div>
+
+        <div class="topic">AND I FORGOT TO TELL ABOUT ONE THING. BEFORE STARTING PROGRAMMING WITH STRING IN C++, FIRST YOU MUST TO ADD LIBRARY : "#include < string >", below "#include < iostream >". </div>
+
+        <div class="topic">Now we will work with reverse function. first we need to declare one more library : "#include < algorithm >". Now get's started. Example:</div>
+
+        <pre class="code">
+        #include < iostream >
+        #include < string >
+        #include < algorithm >
+        using namespace std;
+        int main (){
+
+            string str="cPlusPlus"
+            reverse (str.begin(), str.end());
+            cout << str;
+
+
+            return 0;
+        }</pre>
+    
+        <div class="topic">first we assigned "cPlusPlus" to str. then we reversed str from begin to end. (begin() and end() are also functions.) After this all, output will be: "sulPsulPc".</div>
+    </section><br><br><br>
+<!-- ---------------------------------------------------------------------- -->
+    <section id="char">
+        <div  class="titleOFtopic">Char</div>
+
+
+    </section>
+<!-- ---------------------------------------------------------------------- -->
+    <section id="vector">
+        <div  class="titleOFtopic">Vector</div>
+
+
+    </section>
+        
+</main>    
+    <footer>
+        <p class="text_in_footer"><span class="General_description">This is website where you can learn C++ language Programming</span><span class="copyright">© Created by         ProstoGio</span></p>
+    </footer>
+
+
+</body>
+</html>
