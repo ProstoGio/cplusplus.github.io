@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Learning C++ Programming Language</h1></a>
+    </header>
+
+    <main>
+        <section>
+            <h1>Arrays</h1><br><br>
+            <p>Today we will study a not so difficult topic, but difficult compared to previous topics, a topic called "arrays". An array is not a specific function or operator. Let's get started.</p><br>
+
+            <p>An array is a group of numbers or other things. For example, people saw a forest. They named it "wood". There are 5 trees in total in this forest, and each one has its own number, index. (Note!!! The number of the first element in the array is 0)</p><br>
+
+            <pre class="topic">
+        First tree index: "0";
+        Second tree index: "1";
+        Third tree index: "2";
+        Fourth tree index: "3";
+        Fifth tree index: "4".</pre><br>
+
+        <p>Now we will teach you how to display these elements. If we want to select, for example, the third tree, we write like this: “ int a=wood[2]; ". After that, what is in the second element of the wood array will be stored in some variable "a". and so on. We can write whatever we want in the array. For example: let's create an array called "a" with 5 elements.</p><br>
+        <pre>
+int a[5];
+In this case the array is empty.
+        
+for ( int i = 0; i < 5; i++ ) a[ i ] = 0;
+
+After that, the array will look like this: [0, 0, 0, 0, 0]
+we wrote zeros in it. Let's assign 10 to the fifth element.
+
+a[4]=10;
+
+After that the array will look like this: [0, 0, 0, 0, 10]
+Now assign 7 to the second one.
+
+a[1]=7;
+
+After that it will become like this: [0, 7, 0, 0, 10]</pre><br><br>
+
+            <p>It will also teach you how to insert array elements. This happens in a loop. With any loop, or while or for, but we will use for because it is more convenient.</p><br><br>
+
+            <pre>
+        int a[10];
+        for(int i=0; i < 10; i++){
+            cin>>a[i];
+        }	
+        </pre><br><br>
+
+        <p>If we enter, let's say: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</p><br><br>
+
+        <pre>
+        then a[0] will be: "1";
+        then a[1] will be: "2";
+        then a[2] will be: "3";
+        then a[3] will be: "4";
+        then a[4] will be: "5";
+        then a[5] will be: "6";
+        then a[6] will be: "7";
+        then a[7] will be: "8";
+        then a[8] will be: "9";
+        Then a[9] will be: "10".</pre><br><br>
+
+        <p>We can also output in the same way. That is, I mean with loop is like this:</p><br>
+
+        <pre>
+        for (int i = 0; i < 10; i + +) {
+            cout << a[i];
+        }</pre><br>
+
+        <p>Now that we have enough knowledge about arrays, let's do one task as usual. The condition is as follows: we introduce an array with n number of elements and increase each member by one. Let's do this.</p><br><br>
+
+        <pre>
+        int n;
+        cin >> n;
+        int a [n];
+        for (int i = 0; i < n; i++) {
+            cin >> a [i];
+            a [i] = a [i] + 1;
+        }
+        for (int i = 0; i < n; i++) {
+            cout << a [i];
+        }</pre><br><br>
+
+        <p>this is a code. it fully works. if you see, we assign +1 to each array element. if you input 5 and [1, 2, 3, 4, 5] it will output [2, 3, 4, 5, 6]. thats all.</p><br>
+
+        
+
+
+        
+        
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Giorgi Jinjikhadze. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Learning C++ Programming Language</h1></a>
+    </header>
+
+    <main>
+        <section>
+            <h1>Strings</h1><br><br>
+
+            <p>String is a collection of characters. There are two types of strings commonly used in C++ programming language: Normal Strings, and chars.</p><br>
+
+            <p>first we will learn C++ strings. then we will learn char to next lesson. I will explain everything myself. And we will start our topic with C++ String. Then Char into next lesson.</p><br>
+
+            <p>String is an array of characters. For example string "C++" has 3 characters. They are: "C", "+", and "+". string "Hello World" has a 11 characters. You will ask, why 11? there are only 10 letters yeah? but no. if you see, word "Hello" and word "World" has a space between them. there are only one space. space is this: " ". But don't confuse " " and "". in " " there is space. but in the "" there is anything. it is empty. If there was a string "Hello  World", there would be 12 characters. 10 symbols and 2 space. I think you understood.</p><br><br>
+
+            <pre>
+        How to define a C++ string?
+
+        string str = "C++";
+    
+        Or:
+    
+        string str;
+        str = "C++";</pre><br><br>
+
+        <p>We first defined a string named str. then assigned "C++" with 2 ways. In str string there is a word "C++". Don't forget to write word which you want to assign to sting between 👉 " " 👈. </p><br>
+
+        <p>Now we will talk about, how logical operators work on string. on string we can use only one logical operator, "+". Other logical operators aren't working on string. Let me explain, how "+" works on string. I will use example:</p><br>
+
+        <pre>
+        string s1, s2, s3;
+        s1= "Hello";
+        s2= "World";
+        s3= s1 + s2;
+        cout << s3;</pre><br>
+
+        <p>"+" Operator connects any quanity of strings. if you understand, what will be output? output will be: "HelloWorld". programm connected s1 and s2 and got string "HelloWorld". If you want to insert space between s1 and s2, then add one space to end to s1, or one space in start of s2. Adding 1 space at the end of s1:</p><br>
+
+        <pre>
+        string s1, s2, s3;
+        s1= "Hello ";
+        s2= "World";
+        s3= s1 + s2;
+        cout << s3;</pre><br>
+
+        <p>Adding 1 space at the start of s2:</p><br>
+
+        <pre>
+        string s1, s2, s3;
+        s1= "Hello";
+        s2= " World";
+        s3= s1 + s2;
+        cout << s3;</pre><br>
+
+        <p>Output in both situations will be:  "Hello World".</p><br>
+
+        <p>String has it's own functions. ".size()" finds quanity of symbols in string.</p><br>
+
+        <pre>
+        string s;
+        cin >> s;
+        int quanityOFsymbols;
+        quanityOFsymbols = s.size();
+        cout << quanityOFsymbols;</pre><br>
+
+        <p>if you input "Hello world" quanityOFsymbols will equal to 11 becouse there are 10 symbols and one space between words. if we input "C++", quanityOFsymbols will equal to 3 becouse there are 3 symbols and so on.</p><br>
+
+        <p>AND I FORGOT TO TELL ABOUT ONE THING. BEFORE STARTING PROGRAMMING WITH STRING IN C++, FIRST YOU MUST TO ADD LIBRARY : "#include < string >", below "#include < iostream >". Thats all.</p><br>
+
+
+
+
+
+
+    
+
+
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Giorgi Jinjikhadze. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop</title>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Learning C++ Programming Language</h1></a>
+    </header>
+
+    <main>
+        <section>
+            <h1>While Loop</h1><br><br>
+            
+            <p>Now let's move on to a new topic called "while". This is a loop. Through it we can do one or more actions as many times as we want and need. Now, let's make an example, and let's discuss this topic through it.</p><br><br>
+
+            <pre>   
+    include < iostream >
+    using namespace std;
+    int main (){   
+                    
+        int num, i=0; 
+        cin>>num; 
+        while(i < 10){ 
+            num = num + 1; 
+            i=i+1; 
+        } 
+        cout < < num; 
+        return 0;
+                
+    }</pre><br><br>
+
+            <p>Example Code (as always ofc) and also "while" loop is written like this:</p><br><br>
+            <pre class="code">
+    while("logical representation"){
+        "action 1"
+        "action 2"
+        "action 3"
+    }</pre><br><br>
+
+            <p>And so on (actions). In our code which is shown upper, we tell the computer that as long as i (i is zero) is less than 10, to add 1 to the inputed number. Then along with that, so that the cycle does not end and repeat this action endlessly, we also add i to one. That is, if we enter 0, it will give us 10 as an answer, if we enter 5, it will give us 15 as an answer.</p><br>
+
+            <p>Now let's write another program subject to the following condition: We enter a single natural number. We calculate how many divisors it has. Let me show you this program and then discuss.</p><br><br>
+
+            <pre>    
+    #include < iostream >
+    using namespace std;
+    int main (){
+        
+        int number, i=1, divisors=0;
+        cin>>number;
+        while( i <= number){
+        if (number%i==0){
+            divisors=divisors+1;
+        }
+            i=i+1;
+        }
+        cout << divisors;
+                
+        return 0;
+    }</pre><br><br>
+
+            <p>That is, first, as usual, to enter the number. Then we assign 1 to the counter named i. You will understand why later. We also declare an integer called "divisors". Here we will store the number of dividers. We know how to enter, we entered the number. Then the cycle begins. as long as i is less than number. Then we have this if operator: if(number%i==0)divisors=divisors+1; If you're good at math, you'll immediately understand what's going on. That is, if the number is divisible by i without a remainder, that is, it is a divisor of the number, and therefore we should add one to "divisors". (mehehehehe. dats all ma boi for dis lesson)</p>
+
+
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Giorgi Jinjikhadze. All rights reserved.</p>
+    </footer>
+</body>
+</html>

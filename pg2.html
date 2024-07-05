@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Operator</title>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Learning C++ Programming Language</h1></a>
+    </header>
+
+    <main>  
+        <section>
+            <h1>If Operator</h1><br><br>
+
+            <pre>
+    #include < iostream >
+    using namespace std;
+    int main (){
+                    
+        int a;
+        cin>>a;
+        if(a>10){
+            cout<<”Yes”;
+        }else{
+            cout<<”No”;
+        }
+        return 0;
+                
+    }</pre><br>
+
+        <p>Little example here <3 👆</p><br><br>
+        
+        <p>In this code we have used "if" operator. If you understand what this program does? If you don't understand, don't be afraid, (ik ur not afraid ma boi) I didn't explain it to you and how you will understand hee-hee. (like Muzan Jackson). Let's get started</p><br>
+        
+        <p>As I said, we'll need the "if" operator in almost every C++ task because it's a very important thing. Through it, one can compare one number with another, find out whether the number is odd or even, and so on This is a very important operator.</p><br>
+
+        <p>Let's learn to write it:</p><br><br>
+
+        <pre>
+    if("logical representation"){
+        "any actions"; 
+    }else{  
+        "any actions";  
+    }</pre><br><br>
+
+        <p>(woah, that's easy). You don't need to use "else" in the "if" operator if you don't need to. If you don't need it, you can do it like this:</p><br><br>
+
+        <pre>
+    if("logical representation"){
+        "any action";  
+    }</pre><br><br>
+
+        <p>(that's easy too woahhh thxx). Now consider our given example (Itz above, ma boi 👆). We declare some integer "a", that is, we create a box. Then this will come to us. In the "if" operator we check if it is greater than 10 or not. If yes, we get_"Yes", if not, and it is less, then_"No". That is, this program checks if there is a number greater than 10, and if it is, it outputs yes, and if it is not more, i.e. less, it outputs no. (Remember, whenever we come up with a word or a sentence, we must put it in quotation marks_" "). (Ik that sounded weired but I think its understood).</p><br>
+
+        <p>Now let's do a task for which the following condition will be true: we enter a natural number, check if it is odd or not and output "even" if it is even, and "odd" if it is odd. Let's get started:</p><br><br>
+
+        <pre>
+    #include < iostream >
+    using namespace std;
+    int main (){ 
+                
+        int num; 
+        cin >> num;
+        if(num % 2 == 0){
+            cout << ”even”;
+        }
+        else{
+            cout << ”odd”; 
+        }
+    
+        return 0;
+            
+    }</pre><br><br>
+
+    <p>Here is our program. There is one thing in this code: if(num%2==0) . You won't understand this yet, because I haven't told you something yet. Here, for example, what is this "=="? This is equality. It denotes equality. (Remember, never compare one number to another like this: if(a=b) . This is a big mistake. “=” and “==” are two different things. “=” is assignment, and “==” is equality). There are also other logical signs: “>”_greater than, “<”_less than, “>=”_greater than or equal to, “<=”_less than or equal to, and as we already know “==”_equal to. That is, we divide num by 2 and get its remainder, that is, if num is 2, the remainder is 0, if num is 3, then 1, do you understand, and so on. If this balance is equal to 0, it turns out to be even, and if it is not equal to 0, it turns out to be odd. If it is odd, it will output "odd", if it is even, it will output "even". You will understand what is the matter if you are good at mathematics. (Ohh dangg that was long fr XD).</p><br>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Giorgi Jinjikhadze. All rights reserved.</p>
+    </footer>
+</body>
+</html>

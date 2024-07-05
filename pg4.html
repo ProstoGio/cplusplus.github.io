@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Learning C++ Programming Language</h1></a>
+    </header>
+
+    <main>
+        <section>
+            <h1>For Loop</h1><br><br>
+            
+            <p>We already know the "while" loop. The "for" loop is very similar to it, but sometimes more convenient. Let's see how it works.</p><br>
+
+            <p>Two completely identical codes are presented. One is written with the familiar "while" loop, and the other with the "for" loop, which we should get to know today.</p><br><br>
+
+            <pre>
+        //first:
+            #include < iostream > 
+            using namespace std; 
+            int main (){ 
+                        
+                int num, i=0; 
+                cin>>num; 
+                while(i < 10){ 
+                    num = num + 1; 
+                    i = i + 1; 
+                } 
+                cout < < num; 
+        
+                return 0;
+                    
+            }</pre><br><br>
+
+            <pre>
+        //second:
+            #include < iostream > 
+            using namespace std; 
+            int main(){ 
+                        
+                int num; 
+                cin>>num; 
+                for(int i=0; i < 10; i++){ 
+                    num = num + 1; 
+                } 
+                cout < < num;  
+        
+                return 0;
+                    
+            }</pre><br><br>
+
+            <p>In the first code we see an example executed with a while loop. in the second with "for". There is no difference in these programs if you know. As I told you before, "for" is more convenient in some cases. This is one of the cases. I will explain how it is. Let's look, how "For" loop is written:</p><br><br>
+
+            <pre>
+for(int "Counter"; "Boolean Expression"; "Increase Counter"){
+    "actions";
+}</pre><br><br>
+
+            <p>If you look, in "for" 3 are combined into 1. (int counter; , a logical representation, and increment the counter by one or as many as you want.) (When we write "i++" in the second code above, it is the same as "i=i+1".)</p><br>
+
+            <p>The "for" loop is a loop like the "while" loop, it doesn't do anything different, and it won't change anything, it's just a shortened version of the "while" loop. If you understand what the first code of "while" does (written above), our second code also does the same (also written above, with "for"). The difference is only in recording and the time to record it in the economy, although in some places "while" is more convenient, depending on what the task is.</p><br>
+
+            <p>We don't need to distinguish those examples anymore, because if you understand the program written with "while" loop, you will understand the program written with "for" as well. It's just written differently. (yea that was kinda easy u know).</p>
+
+
+
+
+        
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Giorgi Jinjikhadze. All rights reserved.</p>
+    </footer>
+</body>
+</html>

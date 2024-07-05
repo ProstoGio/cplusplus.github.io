@@ -1,0 +1,98 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and font for the entire page */
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style the navigation menu */
+nav {
+    background-color: #444;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style the main content area */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style individual sections */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #666;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #444;
+    color: #fff;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* a:hover{
+    color: black;
+    background-color: white;
+} */
+
+p{
+    font-family: sans-serif;
+    font-size: 17.5px;
+}
+
+pre{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
